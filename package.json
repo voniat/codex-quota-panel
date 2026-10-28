@@ -1,0 +1,19 @@
+{
+  "name": "codex-quota-panel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local Codex quota side-panel plugin for Windows.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs",
+    "package": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/ext-apps": "1.7.5",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "esbuild": "0.28.2",
+    "zod": "4.6.7"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "codex-quota-panel",
+  "version": "0.1.0",
+  "description": "显示本机当前 Codex 账号的 5 小时和每周剩余额度，支持每 5 分钟自动更新和手动刷新，并标明服务器查询或本机快照及数据时间。",
+  "homepage": "https://github.com/voniat/codex-quota-panel",
+  "repository": "https://github.com/voniat/codex-quota-panel",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Codex 额度",
+        "shortDescription": "在聊天侧栏查看账号剩余额度",
+        "longDescription": "显示本机当前 Codex 账号的 5 小时和每周剩余额度，支持每 5 分钟自动更新和手动刷新，并标明服务器查询或本机快照及数据时间。",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Read",
+          "Interactive"
+        ],
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
+        "defaultPrompt": "在右侧打开我的 Codex 额度面板"
+      }
+    }
+  }
+}

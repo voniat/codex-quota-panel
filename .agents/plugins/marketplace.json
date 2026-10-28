@@ -1,0 +1,20 @@
+{
+  "name": "local-quota",
+  "interface": {
+    "displayName": "本地额度插件"
+  },
+  "plugins": [
+    {
+      "name": "codex-quota-panel",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-quota-panel"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

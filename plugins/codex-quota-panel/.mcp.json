@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "quota": {
+      "command": "node",
+      "args": [
+        "./server/index.cjs"
+      ],
+      "cwd": "."
+    }
+  }
+}
